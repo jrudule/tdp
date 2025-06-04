@@ -1,0 +1,192 @@
+:root { 
+    --background-color-light: #ffffff; 
+    --text-color-light: #333333; 
+    --header-bg-light: #f0f0f0; 
+    --nav-link-light: #007bff; 
+    --nav-link-hover-light: #0056b3; 
+    --section-bg-light: #f9f9f9; 
+    --border-color-light: #dddddd; 
+    --button-bg-light: #007bff; 
+    --button-text-light: #ffffff; 
+    --h2-color-light: #2c3e50; 
+    --h3-color-light: #34495e; 
+ 
+    --background-color-dark: #121212; 
+    --text-color-dark: #e0e0e0; 
+    --header-bg-dark: #1e1e1e; 
+    --nav-link-dark: #bb86fc; 
+    --nav-link-hover-dark: #9f63f8; 
+    --section-bg-dark: #2c2c2c; 
+    --border-color-dark: #444444; 
+    --button-bg-dark: #bb86fc; 
+    --button-text-dark: #121212; 
+    --h2-color-dark: #e0e0e0; 
+    --h3-color-dark: #c0c0c0; 
+} 
+ 
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--background-color-light); 
+    color: var(--text-color-light); 
+    transition: background-color 0.3s, color 0.3s; 
+} 
+ 
+header { 
+    background-color: var(--header-bg-light); 
+    padding: 1em; 
+    text-align: center; 
+    border-bottom: 1px solid var(--border-color-light); 
+} 
+ 
+header h1 { 
+    margin: 0; 
+} 
+ 
+.timeline-nav { 
+    margin: 1em 0; 
+} 
+ 
+.timeline-nav a { 
+    margin: 0 1em; 
+    color: var(--nav-link-light); 
+    text-decoration: none; 
+    font-weight: bold; 
+} 
+ 
+.timeline-nav a:hover { 
+    color: var(--nav-link-hover-light); 
+} 
+ 
+#theme-toggle { 
+    padding: 0.5em 1em; 
+    background-color: var(--button-bg-light); 
+    color: var(--button-text-light); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 1em; 
+    right: 1em; 
+} 
+ 
+main { 
+    padding: 1em; 
+} 
+ 
+section { 
+    margin-bottom: 2em; 
+    padding: 1em; 
+    background-color: var(--section-bg-light); 
+    border: 1px solid var(--border-color-light); 
+    border-radius: 8px; 
+} 
+ 
+section h2 { 
+    color: var(--h2-color-light); 
+    text-align: center; 
+    border-bottom: 2px solid var(--nav-link-light); 
+    padding-bottom: 0.5em; 
+    margin-bottom: 1em; 
+} 
+ 
+.course-section { 
+    margin-bottom: 1.5em; 
+    padding: 1em; 
+    border: 1px solid var(--border-color-light); 
+    border-radius: 5px; 
+} 
+ 
+.course-section h3 { 
+     color: var(--h3-color-light); 
+     margin-top:0; 
+} 
+ 
+.course-details { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1em; 
+} 
+ 
+.languages, .assignments { 
+    flex: 1; 
+    min-width: 200px; 
+} 
+ 
+.placeholder-image { 
+    flex-basis: 550px;
+    height: 350px; 
+    background-color: #e0e0e0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px dashed #ccc; 
+} 
+.placeholder-image img { 
+    max-width: 100%; 
+    max-height: 100%; 
+} 
+ 
+ 
+ul { 
+    list-style-type: disc; 
+    padding-left: 20px; 
+} 
+ 
+footer { 
+    text-align: center; 
+    padding: 1em; 
+    background-color: var(--header-bg-light); 
+    border-top: 1px solid var(--border-color-light); 
+    margin-top: 2em; 
+} 
+ 
+/* Tumšais režīms */ 
+body.dark-mode { 
+    background-color: var(--background-color-dark); 
+    color: var(--text-color-dark); 
+} 
+ 
+body.dark-mode header { 
+    background-color: var(--header-bg-dark); 
+    border-bottom: 1px solid var(--border-color-dark); 
+} 
+ 
+body.dark-mode .timeline-nav a { 
+    color: var(--nav-link-dark); 
+} 
+ 
+body.dark-mode .timeline-nav a:hover { 
+    color: var(--nav-link-hover-dark); 
+} 
+ 
+body.dark-mode #theme-toggle { 
+    background-color: var(--button-bg-dark); 
+    color: var(--button-text-dark); 
+} 
+ 
+body.dark-mode section { 
+    background-color: var(--section-bg-dark); 
+    border: 1px solid var(--border-color-dark); 
+} 
+ 
+body.dark-mode section h2 { 
+    color: var(--h2-color-dark); 
+    border-bottom: 2px solid var(--nav-link-dark); 
+} 
+body.dark-mode .course-section { 
+    border: 1px solid var(--border-color-dark); 
+} 
+body.dark-mode .course-section h3 { 
+    color: var(--h3-color-dark); 
+} 
+body.dark-mode .placeholder-image { 
+    background-color: #333; 
+    border: 1px dashed #555; 
+} 
+ 
+body.dark-mode footer { 
+    background-color: var(--header-bg-dark); 
+    border-top: 1px solid var(--border-color-dark); 
+}
