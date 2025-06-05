@@ -109,9 +109,15 @@ section h2 {
     gap: 1em; 
 } 
  
-.languages, .assignments { 
+.languages, .assignments{ 
     flex: 1; 
-    min-width: 200px; 
+    min-width: 150px; 
+} 
+
+.captions { 
+    flex: 2; 
+    padding-top: 20px; 
+
 } 
  
 .placeholder-image { 
